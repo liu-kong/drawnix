@@ -7,7 +7,7 @@
 </p>
 <div align="center">
   <h2>
-    开源白板工具（SaaS），一体化白板，包含思维导图、流程图、自由画等
+    开源白板工具（SaaS），一体化白板，包含思维导图、流程图、自由画等,本项目基于这个开源项目使用electron和tauri两种方式进行封装,可以离线使用
   <br />
   </h2>
 </div>
@@ -37,6 +37,10 @@
 </div>
 
 [*English README*](https://github.com/plait-board/drawnix/blob/develop/README_en.md)
+
+
+## 说明
+本项目基于这个开源项目使用electron和tauri两种方式进行封装,可以离线使用
 
 ## 特性
 
