@@ -1,0 +1,28 @@
+   0.552292600s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app_lib"}: cargo::core::compiler::fingerprint: stale: missing "F:\\projects\\drawnix-tauri\\src-tauri\\tauri.conf.json"
+   0.578435300s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app_lib"}: cargo::core::compiler::fingerprint: fingerprint dirty for app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)/Check { test: false }/TargetInner { ..: lib_target("app_lib", ["staticlib", "cdylib", "rlib"], "F:\\projects\\drawnix-rust\\drawnix-tauri\\src-tauri\\src\\lib.rs", Edition2021) }
+   0.579745200s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app_lib"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { old_name: "build_script_build", old_fingerprint: 4520973926948556036, new_name: "build_script_build", new_fingerprint: 9704592568667358423 }
+   0.582616000s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "F:\\projects\\drawnix-rust\\drawnix-tauri\\src-tauri\\build.rs", Edition2021) }
+   0.582645000s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: RerunIfChangedOutputPathsChanged { old: ["tauri.conf.json", "capabilities"], new: ["F:\\projects\\drawnix-tauri\\src-tauri\\tauri.conf.json", "capabilities"] }
+   0.647183300s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app_lib"}: cargo::core::compiler::fingerprint: fingerprint dirty for app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)/Check { test: true }/TargetInner { ..: lib_target("app_lib", ["staticlib", "cdylib", "rlib"], "F:\\projects\\drawnix-rust\\drawnix-tauri\\src-tauri\\src\\lib.rs", Edition2021) }
+   0.647226800s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app_lib"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { old_name: "build_script_build", old_fingerprint: 4520973926948556036, new_name: "build_script_build", new_fingerprint: 9704592568667358423 }
+   0.648930700s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app"}: cargo::core::compiler::fingerprint: fingerprint dirty for app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)/Check { test: false }/TargetInner { name: "app", doc: true, ..: with_path("F:\\projects\\drawnix-rust\\drawnix-tauri\\src-tauri\\src\\main.rs", Edition2021) }
+   0.648957200s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { old_name: "app_lib", old_fingerprint: 18260537679835802136, new_name: "app_lib", new_fingerprint: 2303800152086257421 }
+   0.650379800s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app"}: cargo::core::compiler::fingerprint: fingerprint dirty for app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)/Check { test: true }/TargetInner { name: "app", doc: true, ..: with_path("F:\\projects\\drawnix-rust\\drawnix-tauri\\src-tauri\\src\\main.rs", Edition2021) }
+   0.650403000s  INFO prepare_target{force=false package_id=app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri) target="app"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { old_name: "app_lib", old_fingerprint: 18260537679835802136, new_name: "app_lib", new_fingerprint: 2303800152086257421 }
+   Compiling app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)
+error: failed to run custom build command for `app v0.1.0 (F:\projects\drawnix-rust\drawnix-tauri\src-tauri)`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `F:\projects\drawnix-rust\drawnix-tauri\src-tauri\target\debug\build\app-a8ff93596e021b95\build-script-build` (exit code: 1)
+  --- stdout
+  cargo:rerun-if-env-changed=TAURI_CONFIG
+  cargo:rustc-check-cfg=cfg(desktop)
+  cargo:rustc-cfg=desktop
+  cargo:rustc-check-cfg=cfg(mobile)
+  cargo:rerun-if-changed=F:\projects\drawnix-rust\drawnix-tauri\src-tauri\tauri.conf.json
+  cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_APP_NAME=app
+  cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_PREFIX=com_drawnix
+  cargo:rustc-check-cfg=cfg(dev)
+  cargo:rustc-cfg=dev
+  failed to read plugin permissions: failed to read file '\\?\F:\projects\drawnix-tauri\src-tauri\target\debug\build\tauri-d29cabb77b9242e6\out\permissions\app\autogenerated\commands\app_hide.toml': 系统找不到指定的路径。 (os error 3)
